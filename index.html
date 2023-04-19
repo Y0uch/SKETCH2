@@ -101,7 +101,7 @@
     <path class="cls-3" d="m336.68,886.22l-15.1-9.03,40.9-69.45,16.31,8.76s-41.76,69.83-42.11,69.73Z" />
     <path class="cls-3" d="m226.09,780.41l-8.81-15.23,69.48-40.86,10.01,15.58s-70.42,40.77-70.67,40.51Z" />
     <polyline class="cls-3" points="492.69 607.04 532.13 569.98 536.55 575.76 497.45 612.14" />
-    <polyline class="cls-3" points="460.8 634.22 256.76 821.37 260.67 826.37 466.31 641.42" />
+    <polyline id="secondhand" class="cls-3" points="460.8 634.22 256.76 821.37 260.67 826.37 466.31 641.42" />
     <circle class="cls-3" cx="479.52" cy="622.97" r="26.34" />
     <circle class="cls-3" cx="479.52" cy="623.84" r="22.36" />
     <circle class="cls-3" cx="479.35" cy="623.32" r="11.87" />
@@ -246,18 +246,8 @@
       // catch any errors
     });
 
-
-
-
-  function draw() {
-    requestAnimationFrame(draw)
-    let ran = Math.random()
-    if (ran > 0.7) {
-      document.body.innerText += '／'
-    } else if (ran < 12)
-      document.body.innerText += '＼'
-
-
+  const secondhand = document.querySelector('#secondhand')
+secondhand.style.rotate='130deg'
 
 
     document.body.scrollTop = document.body.scrollHeight
