@@ -263,11 +263,12 @@
 <script src="https://cdn.jsdelivr.net/gh/netizenorg/netnet-standard-library/build/nn.min.js"></script>
 <script>
   
-  const backgroundcolor = [{
-    'Clear': '#CD5C5C'
-  }, {
-    'Clouds': '#00FA9A'
-  }, '#D2691E']
+  const backgroundcolor = [{'Clear': '#CD5C5C'}, {'Clouds': '#00FA9A'}, {'Thunderstorm': '#D2691E'}] 
+  
+  
+  
+  
+  
 
   const key = '3e3525439f6ff74bf9a6186483a1e0f3';
   fetch('https://api.openweathermap.org/data/2.5/weather?q=' + 'Bellevue' + '&appid=' + key)
@@ -280,6 +281,10 @@
         document.getElementsByTagName('body')[0].style = 'background-color:' + backgroundcolor[0].Clear;
       } else if (data.weather[0].main === 'Clouds') {
         document.getElementsByTagName('body')[0].style = 'background-color:' + backgroundcolor[1].Clouds;
+        document.body.innerText()
+      }
+      else if (data.weather[0].main === 'Thunderstorm') {
+        document.getElementsByTagName('body')[0].style = 'background-color:' + backgroundcolor[2].Thunderstorm;
         document.body.innerText()
       }
 
