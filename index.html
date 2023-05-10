@@ -309,7 +309,7 @@ sh.style.rotate = '0deg'
 function timeTick () {
   setTimeout(timeTick,1000)
   const d = new Date()
-  const s = nn.map(d.getSeconds(),0,59,0-210,360+210)
+  const s = nn.map(d.getSeconds(),0,59,0,360)
   sh.style.rotate = s +'deg'
 }
   
@@ -321,7 +321,7 @@ function timeTick2 () {
   setTimeout(timeTick2,1000)
   const d2 = new Date()
   const s2 = nn.map(d2.getMinutes(),0,59,0,360)
-  mh.style.rotate = s2-50 +'deg'
+  mh.style.rotate = s2 +'deg'
 }  
   
 const hh = document.querySelector('#hourhand')
