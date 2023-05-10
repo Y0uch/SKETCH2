@@ -1,5 +1,5 @@
 # weather-clock
-URL: [[https://youngjuncho.me/random-clock/](https://youngjuncho.me/weather-clock/)](https://youngjuncho.me/weather-clock/)
+URL: [https://youngjuncho.me/random-clock/]
 
 ![screenshot of the project] (randomclock.png)
 
